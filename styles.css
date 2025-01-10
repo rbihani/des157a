@@ -99,6 +99,7 @@ h2 {
     color: #666;
     margin-bottom: 5px;
     text-align: center;
+    list-style-type: none;
 }
 footer {
     margin-top: 40px;
