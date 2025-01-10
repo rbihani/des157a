@@ -46,6 +46,7 @@ h2 {
 }
 .paper-airplane {
     width: 20px;
+    height: 20px;
     animation: fly 3s infinite ease-in-out;
     position: relative;
 }
