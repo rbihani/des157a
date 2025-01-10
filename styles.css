@@ -30,7 +30,7 @@ body {
     height: 100vh;
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #4b9ca0;
     display: flex;
     text-align: left;
@@ -49,6 +49,7 @@ h2 {
     height: 20px;
     animation: fly 3s infinite ease-in-out;
     position: relative;
+    gap: 20px;
 }
 @keyframes fly {
     0% {
