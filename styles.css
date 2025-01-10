@@ -36,3 +36,70 @@ h1 {
     align-items: center;
     gap: 10px;
 }
+h1 span {
+    position: relative;
+}
+h2 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: -10px;
+}
+.paper-airplane {
+    width: 20px;
+    animation: fly 3s infinite;
+    position: relative;
+}
+@keyframes fly {
+    0% {
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(30px,-20px);
+    }
+    50% {
+        transform: translate(60px,0);
+    }
+    75% {
+        transform: translate(30px,20px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+.card {
+    background-color: #FFFEFE;
+    border: 1px solid #4b9ca0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+    font-size: 1rem;
+    color: #4b9ca0;
+    margin-bottom: 10px;
+}
+.card ul {
+    color: #666;
+    margin-bottom: 5px;
+}
+.card ul li {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #666;
+}
