@@ -61,11 +61,10 @@ h1 {
     padding-left: 20px;
 }
 .paper-airplane {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     animation: fly 3s infinite ease-in-out;
-    position: relative;
-    gap: 20px;
+    margin-left: 15px;
 }
 @keyframes fly {
     0% {
