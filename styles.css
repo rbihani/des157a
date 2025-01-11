@@ -49,9 +49,16 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.banner h1, .banner h2 {
+.banner h1 {
     margin: 0;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.banner h2 {
+    margin: 0;
+    text-align: left;
+    font-weight: light;
     padding-left: 20px;
 }
 .paper-airplane {
