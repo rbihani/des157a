@@ -61,20 +61,6 @@ h1 {
     position: relative;
     gap: 20px;
 }
-.paper-airplane:nth-child(1) {
-    top: 20px;
-    left: 100px;
-}
-
-.paper-airplane:nth-child(2) {
-    top: 50px;
-    left: 400px;
-}
-
-.paper-airplane:nth-child(3) {
-    top: 150px;
-    left: 700px;
-}
 @keyframes fly {
     0% {
         transform: translate(0,0);
