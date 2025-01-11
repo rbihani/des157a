@@ -44,7 +44,7 @@ h1 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -65,8 +65,8 @@ h1 {
     width: 40px;
     height: 40px;
     animation: fly 3s infinite ease-in-out;
-    position: absolute;
-    right: 20px;
+    position: absolute !important;
+    right: 900px;
     top: 50%;
 }
 @keyframes fly {
