@@ -36,15 +36,6 @@ h1 {
     text-align: left;
     gap: 10px;
 }
-h1 span {
-    position: relative;
-}
-h2 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-top: 15px;
-    font-weight: lighter;
-}
 .banner {
     position: relative;
     width: 1100px;
@@ -61,7 +52,7 @@ h2 {
 .banner h1, .banner h2 {
     margin: 0;
     text-align: center;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 .paper-airplane {
     width: 20px;
@@ -76,12 +67,12 @@ h2 {
 }
 
 .paper-airplane:nth-child(2) {
-    top: 100px;
+    top: 50px;
     left: 400px;
 }
 
 .paper-airplane:nth-child(3) {
-    top: 50px;
+    top: 150px;
     left: 700px;
 }
 @keyframes fly {
