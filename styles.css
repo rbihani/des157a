@@ -61,6 +61,7 @@ h2 {
 .banner h1, .banner h2 {
     margin: 0;
     text-align: center;
+    padding-left: 25px;
 }
 .paper-airplane {
     width: 20px;
