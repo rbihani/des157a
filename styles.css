@@ -120,6 +120,7 @@ h1 {
     margin-bottom: 5px;
     text-align: center;
     list-style-type: none;
+    text-decoration: none;
 }
 footer {
     margin-top: 40px;
