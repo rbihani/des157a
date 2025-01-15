@@ -10,19 +10,32 @@
     <h1>Experiment 1</h1>
     <h2>Open the console to see the functionality!</h2>
 <script>
+    // this program prints numbers 1 to 100 with the following rules:
+    // - for numbers divisible by 3, it prints "fizz"
+    // - for numbers divisible by 5, it prints "buzz"
+    // - for numbers divisible by both 3 and 5, it prints "fizzbuzz"
+    // - otherwise it prints the number itself
     var i;
+    // Sequence
+    console.log('FizzBuzz algorithm is starting...')
 
+    // Loop
     for (i = 1; i <= 100; i++) {
+        // Selection
         if (i % 3 === 0 && i % 5 === 0) {
             console.log('FizzBuzz');
+        // Selection
         } else if (i % 3 === 0) {
             console.log('Fizz')
+        // Selection
         } else if (i % 5 === 0) {
             console.log('Buzz');
         } else {
             console.log(`${i}`);
         }
     }
+// Sequence
+    console.log('FizzBuzz algorithm completed.')
 </script>
 
 </body>
