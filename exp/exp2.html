@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2 - Choose Your Favorite Color!</h1>
+    <h2>Open the console to see the functionality!</h2>
+
+    <script>
+        // This program changes the background color of the webpage based on the user's favorite color!
+
+        var colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple']; 
+        function validColor(color) {
+            color = color.trim().toLowerCase();
+
+
+            for (var i = 0; i < color.length; i++) {
+                if(colors[i] === color.toLowerCase()) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function availableColors() {
+            var colorList = 'The available colors are: \n';
+            for (var i = 0; i < colors.length; i++) {
+                colorList += '- ' + colors[i] + '\n';
+            }
+            return colorList;
+        }
+
+        function changeBackground(color){
+            document.body.style.backgroundColor = color; 
+        }
+
+        function main() {
+            console.log('Starting the program'); 
+            var attempts = 3;
+
+            while (attempts > 0) {
+                var userColor = prompt('What is your favorite color?\n' + availableColors())
+
+                console.log('User chose the color: ' + userColor + validColor(userColor));
+
+                if (userColor && validColor(userColor)) {
+                    
+                    changeBackground(userColor.trim().toLowerCase());
+                    alert("Great choice! The background is now " + userColor + ".");
+                    break;
+                    
+                } else {
+                    attempts--;
+                    alert("Invalid color. You have " + attempts + " attempt(s) left.");
+                }
+            }
+
+            if (attempts === 0) {
+                console.log('User failed to give a valid color.')
+                alert('Sorry, you ran out of attempts. Refresh the page to try again!');
+            }
+        }
+
+        main ();
+    </script>
+</body>
+</html>
