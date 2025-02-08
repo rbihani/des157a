@@ -27,7 +27,7 @@
         if (name.value === '') {
             alert('Please add a name');
             name.focus();
-            return;
+            return; //prevents executing the rest of the function when an error is found 
           } else if (food.value === '') {
             alert('Please add a food');
             food.focus();
@@ -63,10 +63,10 @@
             letterContainer.innerHTML = `<p>${myTextIntro}</p><p>${myTextBody}</p><p>${myTextSalutation}</p>`;
         }
 
-        envelopeContainer.style.visibility = 'hidden';
-        backEnvelopeContainer.style.visibility = 'visible';
-        document.querySelector('.envelope').style.visibility = 'hidden';
-        document.querySelector('.back-envelope').style.visibility = 'visible';
+        envelopeContainer.style.visibility = 'hidden'; //front content is hidden 
+        backEnvelopeContainer.style.visibility = 'visible'; //back content is visible 
+        document.querySelector('.envelope').style.visibility = 'hidden'; //front image is hidden
+        document.querySelector('.back-envelope').style.visibility = 'visible'; //back image is visible 
     }
 
     
