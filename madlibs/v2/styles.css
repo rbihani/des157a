@@ -145,3 +145,7 @@
   button {
     margin-top: 10px;
   }
+
+  .outer-container {
+    display: flex;
+  }
