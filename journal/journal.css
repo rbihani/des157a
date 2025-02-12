@@ -63,7 +63,7 @@ h2 {
     margin-left: 1.1em;
 }
 
-p, time {
+p, time, figcaption {
     color: #333;
     font-size: 1rem;
     max-width: 60ch;
@@ -92,4 +92,5 @@ img {
     margin: auto;
     margin-top: 5em;
     border-radius: 10px;
+    align-items: left;
 }
