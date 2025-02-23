@@ -75,10 +75,6 @@ body {
     animation: expand 0.5s ease-in-out;
 }
 
-.full-image {
-    position: relative;
-}
-
 .overlay-image {
     animation: expand 10s ease-in-out;
 }
@@ -91,6 +87,10 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+.full-image {
+    position: relative;
 }
 
 .text {

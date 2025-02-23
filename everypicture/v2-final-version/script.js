@@ -1,12 +1,13 @@
 // --- IIFE 
 'use strict'
 console.log('reading js');
+
 (function (){
     const imgs = document.querySelectorAll('.carousel-slide');
     const overlays = document.querySelectorAll('.overlay');
     const btns = document.querySelectorAll('button');
     
-    //Show overlay for each image
+    //Open overlay for each image
     imgs.forEach(function(value, index) {
         console.log(value, index)
 
