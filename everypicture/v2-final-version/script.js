@@ -35,7 +35,7 @@ console.log('reading js');
     //Open overlay for each image
     imgs.forEach(function(value, index) {
         value.addEventListener('click', function(){
-            const correspondingOverlay = overlays[index];
+            const correspondingOverlay = overlays[index % 6];
             correspondingOverlay.classList.replace("hidden", "visible");
 
             document.querySelector('.animate').style.animationPlayState = 'paused';
