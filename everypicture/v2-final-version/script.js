@@ -45,7 +45,7 @@ console.log('reading js');
     //Return to carousel from overlay 
     btns.forEach(function(button, index){
         button.addEventListener('click', function(){
-            const correspondingOverlay = overlays[index];
+            const correspondingOverlay = overlays[index % 6];
             correspondingOverlay.classList.replace("visible", "hidden");
 
             document.querySelector('.animate').style.animationPlayState = 'running';
