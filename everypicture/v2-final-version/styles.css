@@ -18,10 +18,9 @@ h1, h2, h3, p, ul, ol {
 /* end reset */ 
 
 body {
-    width: 1200px;
     margin: 0;
-    height: 750px;
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .title {
@@ -35,7 +34,6 @@ body {
     position: relative;
     width: 100%;
     height: 640px;
-    overflow: hidden;
 
 }
 
@@ -48,6 +46,11 @@ body {
     border-radius: 10px;
 }
 
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* Copied code from ImageScroll Left Example File */
 :root {
     --sliderwidth: 0;
@@ -56,7 +59,7 @@ body {
 .a, .b {
     display: flex;
     height: 100%;
- }
+}
  
 @keyframes moveSlider {
      from { left: 0; }
@@ -78,13 +81,12 @@ body {
     top: 190px;
     left: 0px; 
     height: 170px;  
-    overflow-x: hidden;
 }
 
 .overlay {
     position: absolute;
-    top: 75px;
-    left: 200px;
+    top: 25vh;
+    left: 25vw;
     width: 795px;
     height: 450px;
     display: flex;
