@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Neonderthaw&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Jackpot V1</title>
+</head>
+
+<body>
+    <main class="start-screen">
+        <h2 class="neonderthaw font-64">Let's Play</h2>
+        <h1 class="vast-shadow font-84">JACKPOT</h1>
+        <button class="vast-shadow font-32 margin-32">START</button>
+    </main>
+
+    <main class="rules-screen none">
+        <h1 class="vast-shadow font-56">JACKPOT</h1>
+        <h2 class="neonderthaw font-48">Rules</h2>
+
+        <p>
+            One player steps up to the table to face the dealer. When it's your turn, throw the dice and watch those numbers light up. The total of your roll gets added to your score ... unless Lady Luck turns her back and one of those dice comes up as a "one". If that happens - BAM - your turn is over, and the dice goes back to the dealer. 
+            <br>
+            But wait! After every roll, you face a choice: <strong>keep rolling and rack up those points</strong> or <strong>play it safe and pass back to the dealer before your luck runs dry</strong>. Remember, the first person to rack up 30 points or more wins the jackpot! 
+            <br>
+            🎲 But there’s a twist! 🎲
+            <br>
+            Roll double ones, or snake eyes, and you're in real trouble. Your whole score? Wiped out. You're back to zero while the dealer moves forward. 
+            <br>
+            Do you play it safe or risk it all? The dice are hot, the stakes are high - <strong>Let's Roll!</strong>
+        </p>
+    
+        <button class="vast-shadow font-32 margin-32">PLAY</button>
+    </main>
+
+    <main class="game-screen none">
+        <h1 class="vast-shadow font-56">JACKPOT</h1>
+        <div class="player-section">
+            <section class="player">
+                <h1 class="vast-shadow font-32">PLAYER</h1>
+                <span class="dice">
+                    <img src="images/die_1.svg"/>
+                    <img src="images/die_1.svg"/>
+                </span>
+                <span class="score vast-shadow font-32">SCORE: <p class="player-score">0</p></span>
+            </section>
+            <section class="dealer">
+                <h1 class="vast-shadow font-48">DEALER</h1>
+                <span class="dice">
+                    <img src="images/die_1.svg" />
+                    <img src="images/die_1.svg" />
+                </span>
+                <span class="score vast-shadow font-32">SCORE: <p class="dealer-score">0</p></span>
+            </section>
+        </div>
+
+        <article class="game-message font-32">
+            Are you ready to play?
+        </article>
+
+        <footer>
+            <button class="vast-shadow font-32 margin-32">ROLL</button>
+            <button class="vast-shadow font-32 margin-32">PASS</button>
+        </footer>
+    </main>
+</body>
+
+</html>
