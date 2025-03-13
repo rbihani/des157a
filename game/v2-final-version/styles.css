@@ -141,7 +141,7 @@ button {
     border-radius: 10px;
     background-color: #BE2813;
     color: white;
-    box-shadow: 0px;
+    box-shadow: none;
     padding: 4px 16px;
 }
 
