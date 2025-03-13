@@ -17,14 +17,14 @@
 <body>
 
 
-    
+
     <main class="start-screen">
         <h2 class="neonderthaw font-64">Let's Play</h2>
         <h1 class="vast-shadow font-84">JACKPOT</h1>
         <button id="start-button" class="vast-shadow font-32 margin-32">START</button>
     </main>
 
-    <main class="rules-screen none">
+    <div class="rules-screen none">
         <section class="rules-header">
             <h1 class="vast-shadow font-56">JACKPOT</h1>
             <h2 class="neonderthaw font-56">Rules</h2>
@@ -53,26 +53,26 @@
         <section class="rules-footer">
             <button id="play-button" class="vast-shadow font-32 margin-32">PLAY</button>
         </section>
-    </main>
+    </div>
 
-    <main class="game-screen none">
+    <div class="game-screen none">
         <h1 class="vast-shadow font-56">JACKPOT</h1>
         <div class="player-section">
             <section class="player">
                 <h1 id="player-heading" class="vast-shadow font-32">PLAYER</h1>
                 <span class="dice">
-                    <img id="player-dice-1" src="images/die_1.svg" />
-                    <img id="player-dice-2" src="images/die_1.svg" />
+                    <img id="player-dice-1" src="images/die_1.svg" alt="Dice"/>
+                    <img id="player-dice-2" src="images/die_1.svg" alt="Dice"/>
                 </span>
-                <span class="score vast-shadow font-32">SCORE: <p class="player-score">0</p></span>
+                <span class="score vast-shadow font-32">SCORE: <span class="player-score">0</span></span>
             </section>
             <section class="dealer">
                 <h1 id="dealer-heading" class="vast-shadow font-48">DEALER</h1>
                 <span class="dice">
-                    <img id="dealer-dice-1" src="images/die_1.svg" />
-                    <img id="dealer-dice-2" src="images/die_1.svg" />
+                    <img id="dealer-dice-1" src="images/die_1.svg" alt="Dice"/>
+                    <img id="dealer-dice-2" src="images/die_1.svg" alt="Dice"/>
                 </span>
-                <span class="score vast-shadow font-32">SCORE: <p class="dealer-score">0</p></span>
+                <span class="score vast-shadow font-32">SCORE: <span class="dealer-score">0</span></span>
             </section>
         </div>
 
@@ -85,11 +85,11 @@
             <button id="pass-button" disabled class="vast-shadow font-32 margin-32">PASS</button>
             <button id="reset-button" class="vast-shadow font-32 margin-32 none">START NEW GAME</button>
         </footer>
-    </main>
+    </div>
 
-    <main class="sources">
+    <div class="sources">
         <a href="sources.html">Sources</a>
-    </main>
+    </div>
 </body>
 
 </html>
