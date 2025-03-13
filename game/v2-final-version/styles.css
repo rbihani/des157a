@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/jackpot_background.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sources {
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #BE2813;
+    padding: 15px;
+}
+
+.rules-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/poker_noise.png");
+    background-size: cover;
+    max-width: 75vw;
+    padding: 45px;
+    color: #BE2813;
+    border-radius: 20px;
+}
+
+.rules-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rules-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.game-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 75vw;
+    justify-content: space-between;
+    background-image: url("images/poker_noise.png");
+    background-size: cover;
+    max-width: 75vw;
+    padding: 40px 64px 40px 64px;
+    color: #BE2813;
+    border-radius: 20px;
+    gap: 32px;
+}
+
+.player-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 64px;
+}
+
+.player,
+.dealer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.player-score,
+.dealer-score {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+p {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    font-family: Figtree;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+article {
+    color: #BE2813;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Vast Shadow", serif;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #BE2813;
+    color: white;
+    box-shadow: 0px;
+    padding: 4px 16px;
+}
+
+button:disabled {
+    opacity: 50%;
+}
+
+.margin-32 {
+    margin-top: 32px !important;
+}
+
+.neonderthaw {
+    font-family: "Neonderthaw", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.vast-shadow {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+
+}
+
+.font-84 {
+    font-size: 84px;
+
+}
+
+.font-64 {
+    font-size: 64px;
+}
+
+.font-56 {
+    font-size: 56px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+.font-32 {
+    font-size: 32px;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
